@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mervin Mani</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&family=Ubuntu&display=swap" rel="stylesheet">
+ 	<script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">mad<span>m</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+			</ul>
+			<a href="https://www.linkedin.com/in/mervinmani/" class="btn">Say Hi!</a>
+		</nav>
+		
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Mervin <span>Mani</span></h1>
+			<h3>I'am a Fullstack Web Developer.</h3>
+			<div class="newslatter">
+				<form action="mailto:name@email.com"> 
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!----About section start---->
+	<section class="about" id="about">
+		<div class="main">
+			<img src="img/main-img.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Web Developer <span>& Software Engineer</span></h5>
+				<p>I'm always fascinated with the world of computers, the sciences, the things that make them run, and their impact on how it changes our way of life. Since I started studying it seems that I'm bound to this career despite the wrong turns of life. And now, more than ever my passion, dedication, and love for this career are greater and stronger than before. As a testament to that, I engage myself in the intensive bootcamp by Zuitt. And always engaging myself to hone my skills.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service" id="projects">
+		<div class="title">
+			<h2>Projects</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Static Website </h5>
+				<div class="pra">
+					<p>A static website portfolio created using HTML and CSS. Static website for information delivery. Simple and Efficient</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://mervinmani.github.io/capstone1">Check it out</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>API</h5>
+				<div class="pra">
+					<p>An API for E-Commerce web app. Uses Node.js, Express.js, Mongoose, MongoDB and Javascript. Deployed to cloud-based platforms Heroku.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://rocky-reaches-97141.herokuapp.com">Check it out</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>E-Commerce App</h5>
+				<div class="pra">
+					<p>A React.js full-stack development of an E-commerce app with core functionality of an e-commerce online store.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://e-commerce-capstone3-r9raeqc77-manimervin.vercel.app/orderitems">Check it out</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+	<div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+	</div>
+	
+
+	<!------footer start--------->
+	<footer id="skills">
+
+		<p>Skills</p>
+		<p>Git, HTML, CSS, Bootstrap, Javascript, MongoDB, Node.js, Express.js, React.js and Full-stack Web Development</p>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/mervinmani/"><i class="fab fa-linkedin"></i></a>		
+		</div>
+		<p class="end">&copy Mervin Mani | <span style="color: white"> (+63) 955 - 450 - 4490</span></p>
+	</footer>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+
+
+
+</body>
+</html>
